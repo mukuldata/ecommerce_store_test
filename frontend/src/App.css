@@ -1,0 +1,134 @@
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px 0;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient from purple to blue */
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    font-size: 2.5rem; /* Larger for prominence */
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase; /* Adds a more bold and stylish look */
+  }
+  
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 1.8rem; /* Adjust for smaller screens */
+    }
+  }
+  
+
+  
+/* Product List */
+.product-list {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .product-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .product-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 15px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+  }
+  
+  .filters div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    min-width: 150px;
+  }
+  
+  .filters label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+  }
+  
+  .filters input,
+  .filters select {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .filters input:focus,
+  .filters select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+  
+  .filters input:hover,
+  .filters select:hover {
+    border-color: #0056b3;
+  }
+  
+  @media (max-width: 600px) {
+    .filters {
+      flex-direction: column;
+      align-items: stretch;
+      padding: 10px;
+    }
+  
+    .filters div {
+      min-width: unset;
+    }
+  }
+  
+  
+  /* Pagination */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .pagination button {
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination button:hover {
+    background-color: #ddd;
+  }
+  
+  .pagination button.active {
+    background-color: #333;
+    color: #fff;
+  }
+  
